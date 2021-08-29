@@ -1,0 +1,8 @@
+@inproceedings{yuan2019reinforcement,
+  title={Reinforcement learning in topology-based representation for human body movement with whole arm manipulation},
+  author={Yuan, Weihao and Hang, Kaiyu and Song, Haoran and Kragic, Danica and Wang, Michael Y and Stork, Johannes A},
+  booktitle={2019 International Conference on Robotics and Automation (ICRA)},
+  pages={2153--2160},
+  year={2019},
+  organization={IEEE}
+}

@@ -1,0 +1,10 @@
+@article{song2018fingertip,
+  title={Fingertip surface optimization for robust grasping on contact primitives},
+  author={Song, Haoran and Wang, Michael Yu and Hang, Kaiyu},
+  journal={IEEE Robotics and Automation Letters},
+  volume={3},
+  number={2},
+  pages={742--749},
+  year={2018},
+  publisher={IEEE}
+}

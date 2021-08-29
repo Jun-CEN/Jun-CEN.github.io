@@ -1,0 +1,8 @@
+@inproceedings{song2020pip,
+  title={PiP: Planning-informed Trajectory Prediction for Autonomous Driving},
+  author={Song, Haoran and Ding, Wenchao and Chen, Yuxuan and Shen, Shaojie and Wang, Michael Yu and Chen, Qifeng},
+  booktitle={European Conference on Computer Vision},
+  pages={598--614},
+  year={2020},
+  organization={Springer}
+}

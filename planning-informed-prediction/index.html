@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173182823-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-173182823-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PiP: Planning-informed Prediction</title>
+    <meta name="author" content="Haoran Song">
+    <meta name="description" content="Project page of PiP-Planning-informed Trajectory Prediction for Autonomous Driving, ECCV 2020">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="eccv_logo.png">
+    <!-- Format -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="../format/app.css">
+    <link rel="stylesheet" href="../format/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="../format/app.js"></script>
+    <!-- Make all the links contained on this page to be opened with a new page. -->
+    <base target="_blank" />
+  </head>
+
+  <body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                PiP: Planning-informed Trajectory Prediction<br />
+                for Autonomous Driving<br />
+                <small>
+                    ECCV 2020
+                </small>
+            </h1>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="http://song-haoran.com/">
+                            Haoran Song
+                        </a>
+                        <br />HKUST
+                    </li>
+                    <li>
+                        <a href="https://wenchaoding.github.io/">
+                            Wenchao Ding
+                        </a>
+                        <br />HKUST
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=QuoHHFMAAAAJ&hl=zh-CN&oi=sra">
+                            Yuxuan Chen
+                        </a>
+                        <br />USTC
+                    </li>
+                    <li>
+                        <a href="http://uav.ust.hk/">
+                            Shaojie Shen
+                        </a>
+                        <br />HKUST
+                    </li>
+                    <li>
+                        <a href="https://seng.ust.hk/about/people/faculty/michael-yu-wang/">
+                            Michael Yu Wang
+                        </a>
+                        <br />HKUST
+                    </li>
+                    <li>
+                        <a href="https://cqf.io/">
+                           Qifeng Chen
+                        </a>
+                        <br />HKUST
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-md-12 text-center">
+                Some more comments
+            </div>
+        </div> -->
+
+        <!-- ##### Elements #####-->
+        <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="ECCV2020_planning_informed_prediction.pdf">
+                            <img src="pip_paper_cover.png" height="120px"><br>
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/eN4BBVUJ2NQ">
+                            <img src="../images/youtube_icon.png" height="120px"><br>
+                                <h4><strong>Talk</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Haoran-SONG/PiP-Planning-informed-Prediction/">
+                            <img src="../images/github_icon.png" height="120px"><br>
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Example Results
+                </h3>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="lighthouse_results.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div> -->
+
+        <!-- ##### Abstract #####-->
+        <hr>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                  It is critical to predict the motion of surrounding vehicles for self-driving planning, 
+                  especially in a socially compliant and flexible way. 
+                  However, future prediction is challenging due to the interaction and uncertainty in driving behaviors. 
+                  We propose planning-informed trajectory prediction (PiP) to tackle the prediction problem in the multi-agent setting. 
+                  Our approach is differentiated from the traditional manner of prediction, which is only based on historical information and decoupled with planning. 
+                  By informing the prediction process with the planning of ego vehicle, 
+                  our method achieves the state-of-the-art performance of multi-agent forecasting on highway datasets. 
+                  Moreover, our approach enables a novel pipeline which couples the prediction and planning, 
+                  by conditioning PiP on multiple candidate trajectories of the ego vehicle, 
+                  which is highly beneficial for autonomous driving in interactive scenarios.                
+                </p>
+            </div>
+        </div>
+
+        
+        <!-- ##### Overview video #####-->
+        <hr>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <h3>
+                  Technical Video
+              </h3>
+              <div class="text-center">
+                  <div style="position:relative;padding-top:56.25%;">
+                      <iframe src="https://www.youtube.com/embed/eN4BBVUJ2NQ" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- ##### Motivation & Key idea #####-->
+        <hr>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <h3>
+                Motivation & Key idea
+              </h3>
+              <p class="text-justify">
+                The relationship between the planning and the prediction module in most autonomous driving systems is illustrated below (without the “<u>Ego Plan</u>” arrow). 
+                To achieve real-time driving, most vehicle motion planners follow the sampling-based approach: 
+                first rolls out candidate trajectories fastly, then score them with some policies or user-defined functions, finally select the optimal one to execute. 
+                The role of the prediction module is to feed the future prediction of dynamic objects to the planning module, so as to evaluate the candidate plans more precisely.
+              </p>
+              <img src="pip_bg.png" class="img-responsive" alt="bac">
+              <p class="text-justify">                 
+                The traditional manner of prediction is only based on the tracking results, decoupled from future planning. 
+                That is to say, the predicted future is inferred only from historical information and thereby the same for diverse ego's plans. 
+                However, the future plan of controllable ego agent will largely affect the behaviors of surrounding agents. 
+                It leads to a significant difference in future predictions. Then it comes to the motivation behind this work.
+
+                We propose Planning informed Prediction that incorporates the ego vehicle’s future planning in the prediction process (with the “<u>Ego Plan</u>” arrow). 
+                It produces predictions one-to-one corresponding to the candidate future trajectories of the ego vehicle. 
+                This pipeline uncovers <i>how the other vehicles will interact with ego vehicle if the ego vehicle executes any specific planning trajectory.</i> 
+                Therefore it is especially suitable for planning in dense and highly interactive traffic.
+              </p>
+              <br />
+              <img src="pip_comp.png" class="img-responsive" alt="overview">
+                <p class="text-justify">
+                    The comparison between the traditional prediction approach (left) and PiP (right) is demonstrated under a lane merging scenario. 
+                    Assume the ego vehicle (red) intends to merge to the left lane. 
+                    It is required to predict the trajectories of surrounding vehicles (blue).
+                    To alleviate the uncertainty led by future interaction, PiP incorporates the future plans (dotted red curve) of ego vehicle in addition to the history tracks (grey curve). 
+                    While the traditional prediction result is produced independently with the ego's future, 
+                    PiP produces predictions one-to-one corresponding to the candidate future trajectories by enabling the novel planning-prediction-coupled pipeline. 
+                    Therefore, PiP evaluates the planning safety more precisely and achieves more flexible driving behavior (solid red curve) compared with the traditional pipeline.          
+                </p>
+          </div>
+        </div>
+
+        <!-- ##### Architecture #####-->
+        <hr>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <h3>
+                  Architecture
+              </h3>
+              <img src="pip_network.png" class="img-responsive" alt="PiP Architecture overview"><br>
+              <p class="text-justify">
+                PiP consists of three key modules, including planning coupled module, target fusion module, and maneuver-based decoding module. 
+                Each predicted target is firstly encoded in the planning coupled module by aggregating all information within the target-centric area (blue square). 
+                A target tensor is then set up within the ego-vehicle-centric area (red square) by placing the target encodings into the spatial gird based on their locations. 
+                Afterward, the target tensors are passed through the following target fusion module to learn the interdependency between targets, and eventually, a fused target tensor is generated. 
+                Finally, the prediction of each target is decoded from the corresponding fused target encoding in the maneuver-based decoding module. 
+                The target vehicle marked with an ellipse is exemplified for planning coupled encoding and multi-modal trajectories decoding.
+              </p>
+          </div>
+        </div>
+        
+        <!-- ##### BibTex #####-->
+        <hr>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+                <!-- <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+                    @inproceedings{song2020pip,
+                        title={PiP: Planning-informed Trajectory Prediction for Autonomous Driving},
+                        author={Song, Haoran and Ding, Wenchao and Chen, Yuxuan and Shen, Shaojie and Wang, Michael Yu and Chen, Qifeng},
+                        booktitle={European Conference on Computer Vision},
+                        pages={598--614},
+                        year={2020},
+                        organization={Springer}
+                    }
+                    </textarea>
+                </div> -->
+                <div class="row align-items-center">
+                    <div class="col py-3">
+                        <pre class="border">
+@inproceedings{song2020pip,
+    title={PiP: Planning-informed Trajectory Prediction for Autonomous Driving},
+    author={Song, Haoran and Ding, Wenchao and Chen, Yuxuan and Shen, Shaojie and Wang, Michael Yu and Chen, Qifeng},
+    booktitle={European Conference on Computer Vision},
+    pages={598--614},
+    year={2020},
+    organization={Springer}
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+@article{song2021herding,
+  title={Herding by caging: a formation-based motion planning framework for guiding mobile agents},
+  author={Song, Haoran and Varava, Anastasiia and Kravchenko, Oleksandr and Kragic, Danica and Wang, Michael Yu and Pokorny, Florian T and Hang, Kaiyu},
+  journal={Autonomous Robots},
+  pages={1--19},
+  year={2021},
+  publisher={Springer}
+}

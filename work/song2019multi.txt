@@ -1,0 +1,9 @@
+@INPROCEEDINGS{song2020multi,
+  author={Song, Haoran and Haustein, Joshua A. and Yuan, Weihao and Hang, Kaiyu and Wang, Michael Yu and Kragic, Danica and Stork, Johannes A.},
+  booktitle={2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Multi-Object Rearrangement with Monte Carlo Tree Search: A Case Study on Planar Nonprehensile Sorting}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={9433-9440},
+  doi={10.1109/IROS45743.2020.9341532}}

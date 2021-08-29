@@ -1,0 +1,8 @@
+@misc{hang2019robotic,
+  title={Robotic fingertip design and grasping on contact primitives},
+  author={Hang, Kaiyu and Song, Haoran},
+  year={2019},
+  month=may # "~23",
+  publisher={Google Patents},
+  note={US Patent App. 16/192,169}
+}
