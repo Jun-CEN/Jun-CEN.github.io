@@ -1,2 +1,2 @@
 # Homepage
-This is my personal website: song-haoran.com. Go live on July 21, 2020.
+This is my personal website: cen-jun.com. Go live on August 29, 2021.
