@@ -1,0 +1,54 @@
+body {
+    /*font-family: 'Open Sans';*/
+    scroll-behavior: smooth
+}
+
+.menu-list a.is-active {
+    background-color: #4a4a4a;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.details h3{
+    font-weight:600;
+    font-size:1em;
+    color:#000;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 30px;
+}
+
+.social{
+    /*float: left;*/
+    padding-bottom: 2em;
+    padding-top: 0em;
+    font-size: 1em;
+}
+
+.sidebar{
+    /*float: left;*/
+    padding-bottom: 2em;
+    padding-top: 1em;
+    font-size: 1em;
+}
+
+img.img-logo {
+    height: auto; 
+    width: 11em;
+}
+
+.column.is-3 {
+    margin: auto;
+}
+
+/* https://pytorch.org/assets/brand-guidelines/PyTorch-Brand-Guidelines.pdf */
+.details a:hover, .right-panel a:hover { color: rgb(238, 76, 44); }
+a:active { color: rgb(238, 76, 44) }
+#sidebar a:hover{text-decoration: none;}
+.social a:hover{text-decoration: none; color: #4a4a4a; }
+.social a:hover svg{transform: scale(1.5);}
+.dark{color: #4a4a4a!important;}
+.dark:hover{color: #4a4a4a!important;}
