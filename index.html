@@ -1,797 +1,1014 @@
-
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFR2GFKT75"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-RFR2GFKT75');
+  </script> -->
+  <!-- Google Tag Manager -->
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  })(window,document,'script','dataLayer','GTM-NC38VTD');</script> -->
+  <!-- End Google Tag Manager -->
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="refresh" content="0; URL=https://cs.stanford.edu/~leoyuan/"> -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	<!-- <meta name="google-site-verification" content="u_--0s_Uw50r4zCgRrzltkmFhNCduYOJwPGlKVTuNJU" /> -->
+
   <title>Jun CEN</title>
-  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-  <link rel="shortcut icon" type="image/x-icon" href="images/leon.png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!-- Bulma Version 0.7.5-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
-  <link href='css/style.css?_t=20200916' rel='stylesheet' type='text/css'>
-  <script defer src="font-awesome/js/brands.min.js"></script>
-  <script defer src="font-awesome/js/regular.min.js"></script>
-  <script defer src="font-awesome/js/fontawesome.min.js"></script>
-    <style>
-      .red {
-        color: rgb(238, 76, 44);
-        font-style: normal;
-      }
-      .blue {
-        color: rgb(238, 76, 44);
-        font-style: normal;
-      }
-       
-      #intro {
-       margin-top: 0em !important;
-      }
-      
-      .content h3 {
-       margin-bottom: 1em!important;
-       margin-top: 2em!important;
-      }
+  <meta name="description" lang="en" content="This is an academic website for Will Hua">
+  <meta name="keywords" lang="en" content="Jun CEN" />
+  
 
-      .content figure {
-       width: 90%;
-       display: flex;
-       align-items: center;
-       overflow: hidden;
-       margin-left: auto!important;
-       margin-right: auto!important;
-      }
-      
-      .columns:not(:last-child) {
-       margin-bottom: 1.75rem!important;
-      }
+  <link rel="shortcut icon" href="images/J.jpeg">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/academicons.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-      #sidebar {
-        width: 75%;
-      }
 
-      @media screen and (min-width: 769px), print {
-        .column.is-2_5, .column.is-2-tablet {
-          flex: none;
-          width: 20%;
+  <script src="js/jquery-2.1.3.min.js"> </script>
+
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+</script>
+<![endif]-->
+
+  <script type="text/javascript">
+    function ShowHide(divId, linkDivId) {
+        if(document.getElementById(divId).style.display == 'none') {
+            document.getElementById(divId).style.display='block';
+            document.getElementById(linkDivId).style.display='none'; // Hide the "read more" link
         }
-      }
-</style>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+        else {
+            document.getElementById(divId).style.display = 'none';
+        }
+    }
+  </script>
+
+  <style>
+    /* 为所有列表项设置样式 */
+    li.indented {
+        position: relative;
+        padding-left: 90px; /* 这是对齐效果的关键，可以根据实际内容调整这个值 */
+    }
+
+    li.indented::before {
+        content: attr(data-date);
+        position: absolute;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+    }
+  </style>
+  
 </head>
 
 
 <body>
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-2_5">
-          <div class="sticky">
-            <figure class="image" style="width: 11.6rem; margin-top: 6px;">
-              <img src="images/myself.jpg">
-            </figure>
-            <div class="content">
-              <h2 style="margin-top: 1em">Jun CEN</h2>
-              <p>
-                <b>HKUST</b><br/> 
-                Clear Water Bay, Kawloon<br/> 
-                Hong Kong
-              </p>
-            </div>
-            <!-- social network icons -->
-            <div class="social">
-              <a href="https://github.com/Jun-CEN" target="_blank">
-                <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a;"></span>
-              </a>
-              <a href="https://scholar.google.com/citations?user=7SKAhBwAAAAJ&hl=en" target="_blank">
-                <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
-              </a>
-              <a href="https://www.linkedin.com/in/jun-cen-45b995219/" target="_blank">
-                <span class="fab fa-linkedin fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
-              </a>
-              <a href="mailto:jcenaa@connect.ust.hk" target="_blank">
-                <span class="fa-regular fa-envelope fa-2x" style="display:inline; text-decoration: none; color: #4a4a4a; margin-left: 15px"></span>
-              </a>
-            </div>
 
+    <!-- Google Tag Manager (noscript) -->
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC38VTD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+<!-- End Google Tag Manager (noscript) -->
 
-            <div id="sidebar" class="menu sticky is-hidden-mobile">
-              <p class="menu-label"><b>Quick Links</b></p>
-              <ul class="menu-list">
-                <li><a href="#intro">About Me</a></li>
-               <li><a href="#education">Education</a></li>
-                <li><a href="#wexperience">Work Experience</a></li>
-		<li><a href="#iexperience">Internship Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#awards">Awards</a></li>
-              </ul>
-            </div>
-          </div>
+    <header class="site-header">
 
+  <div class="wrapper">
+<nav class="site-nav">
+  <a href="#" class="menu-icon">
+    <svg viewBox="0 0 18 15">
+      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+      <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+      <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+    </svg>
+  </a>
 
+  <div class="trigger">
+    <a class="page-link" href="#bio"><b>Biography</b></a>
+    <a class="page-link" href="#publications"><b>Publications</b></a>
+    <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
+    <a class="page-link" href="#timeline"><b>Experiences</b></a>
+    <a class="page-link" href="#teaching"><b>Teaching </b></a>
+    <a class="page-link" href="#academicservices"><b>Academic Services </b></a>
+    <a class="page-link" href="#misc"><b>Misc</b></a>
+    <!--<a class="page-link" href="#otherprojects">Projects</a>-->
+    <!-- Button for Posts -->
+  </div>
+</nav>
+  </div>
+</header>
 
+  <div id="profile-cover" class="cover shallow-bg img-responsive"> 
+    <div id="profile-namecard" class="profile-wrapper wrapper-light">
+      <div id="my-pic" class="profile-col profile-col-1">
+        <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark"-/>
+      </div>
+      <div id="my-contact" class="profile-col profile-col-2">
+        <div id="my-name" class="text-grey-dark">
+          Jun CEN<br>
         </div>
-        <div class="column right-panel">
-          <div class="content">
+        <div id="my-title" class="text-grey">
+          DAMO Academy, Alibaba
+        </div>
+        <div id="my-email" class="text-grey-light">
+          jcenaa [at] connect.ust.hk
+        </div>
 
+	</div>
+        <div class="social-media">
+          <a href="https://scholar.google.com/citations?user=7SKAhBwAAAAJ&hl=en" class="icon-button github">
+          <i class="ai ai-google-scholar-square icon-github"></i>
+            <span></span>
+          </a>
 
-            <!--About Me-->
-            <h2 id="intro">About Me</h2>
-            <p>
-I am an algorithm expert in <a href="https://damo.alibaba.com/?language=zh">DAMO Academy, Alibaba</a>, where I focus on multi-modality model.
-</p>
-            <p>
-I got my Ph.D. at the
-                        <a href="http://ri.ust.hk">Robotics Institute</a>, <a href="https://www.ust.hk">The Hong Kong University of Science and Technology</a>,
-                        where I work on computer vision and autonomous driving under the supervision of <a href="https://cqf.io/">Prof. Qifeng Chen</a> and <a href="https://research.monash.edu/en/persons/michael-wang-2">Prof. Michael Yu Wang</a>. Here is my <a href="work/Resume_Jun_CEN.pdf">CV</a>.
-                    </p>
-            <p>
-My research lies in computer vision, multi-modality learning, robotics, etc. My previous work focus on multi-modality LLM, 2D semantic segmentation, 3D object detection, 3D LIDAR semantic segmentation, video recognition and image recognition.
+          <a href="https://github.com/Jun-CEN" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jun-cen-45b995219/" class="icon-button linkedin">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+         
+          <a href="work/Resume_Jun_CEN.pdf" class="icon-button github">
+            <i class="ai ai-cv icon-github"></i>
+            <span></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- <div id="my-desc" class="profile-col profile-col-2 hide">
+        <div id="my-desc-title">
+          Another me.
+        </div>
+        <div id="my-desc-content">
+          I enjoy running, traveling, hiking, movies, music and so much more<br>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <!-- <script type="text/javascript">
+    function deepFeature()
+    {
+      $('#profile-avatar').attr('src', 'images/self-portrait/deep-me.jpg');
+      $('#profile-avatar').removeClass('border-dark');
+      $('#profile-avatar').addClass('border-bright');
+
+      $('#profile-cover').removeClass('shallow-bg');
+      $('#profile-cover').addClass('deep-bg');
+      
+      $('#profile-namecard').removeClass('wrapper-light');
+      $('#profile-namecard').addClass('wrapper-dark');
+      
+      $('#my-desc').removeClass('hide');
+      $('#my-contact').addClass('hide');    
+      // console.log('Move in now...');
+    }
+
+    function shallowFeature()
+    {
+      $('#profile-avatar').attr('src', 'images/self-portrait/me.jpg');
+      $('#profile-avatar').removeClass('border-bright');
+      $('#profile-avatar').addClass('border-dark');
+
+      $('#profile-cover').removeClass('deep-bg');
+      $('#profile-cover').addClass('shallow-bg');
+      
+      $('#profile-namecard').removeClass('wrapper-dark');
+      $('#profile-namecard').addClass('wrapper-light');
+      
+      $('#my-contact').removeClass('hide');
+      $('#my-desc').addClass('hide');
+      // console.log('Move out now...');
+    }
+
+    $(function() { 
+      $('#my-pic').hover(deepFeature, shallowFeature);
+    })
+
+  </script> -->
+
+<div class="page-content">
+<div class="wrapper">
+<div id="bio" class="bio">
+
+  <h1 class="md-heading text-left">
+    <i class="fa fa-id-card" aria-hidden="true"></i>
+    About
+  </h1>
+  <div class="bio-body" style="overflow:hidden;">
+    <p>
+      I am an algorithm expert in <a href="https://damo.alibaba.com/?language=zh">DAMO Academy, Alibaba</a>, where I focus on multi-modality model and embodied AI.
+I got my Ph.D. at the <a href="http://ri.ust.hk">Robotics Institute</a>, <a href="https://www.ust.hk">The Hong Kong University of Science and Technology</a>, where I work on computer vision and autonomous driving under the supervision of <a href="https://cqf.io/">Prof. Qifeng Chen</a> and <a href="https://scholar.google.com/citations?user=Oo7c22wAAAAJ&hl=zh-CN">Prof. Michael Yu Wang</a>.
  
 I'm always looking for related colaboration. If you are interested to chat with me, feel free to drop me an <a href="mailto:jcenaa@connect.ust.hk" target="_blank">email</a>.
-      </p>
-<p>    
- </p>
-            
-<!--Education-->
-            <h2 id="education" style="margin-bottom: 25px;">Education</h2>
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/hkust.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Ph.D. Student</b> | Robotics Institute, The Hong Kong University of Science and Technology<br>
-                    Time: Sep 2020 - Aug 2024. Mentor: <a href="https://cqf.io/">Prof. Qifeng Chen</a> and <a href="https://research.monash.edu/en/persons/michael-wang-2">Prof. Michael Yu Wang</a>
-                  </p>
-                </div>
-              </div>
-            </article>
 
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/hkust.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>MSc Student</b> | The Hong Kong University of Science and Technology<br>
-                    Time: Sep 2019 - July 2020. Mentor: <a href="https://seng.hkust.edu.hk/about/people/faculty/lilong-cai">Prof. Lilong Cai</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+      <br>
+    </p>
 
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/zju.jpeg" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Undergraduate Student</b> | Zhejiang University<br>
-                    Time: Sep 2015 - Sep 2019. Mentor: <a href="http://me.zju.edu.cn/meenglish/2016/1129/c15493a734703/page.htm">Prof. Jinghua Xu</a>
-                  </p>
-                </div>
-              </div>
-            </article>
+    <div style="width: 50%; float:left">
+			<h3>
+		    <i class="fa fa-star" aria-hidden="true"></i>
+		    <strong>Interests</strong>
+			</h3>
+      <ul>
+        <!-- <li><b>Multi-modality</b></li> -->
+        <li><b>Embodied AI, Multi-modality LLM</b></li>
+        <a href="https://arxiv.org/abs/2402.10534" target="_blank">[VLP]</a><a href="https://ieeexplore.ieee.org/abstract/document/9681231" target="_blank">[VPN]</a>
+        <li><b>Autonomous Driving</b></li>
+        <a href="https://arxiv.org/abs/2403.13261" target="_blank">[STC]</a><a href="https://arxiv.org/abs/2207.01452" target="_blank">[REAL]</a><a href="https://arxiv.org/abs/2108.04562" target="_blank">[DML]</a><a href="https://arxiv.org/abs/2112.01135" target="_blank">[MLUC]</a>
+        <li><b>3D Segmentation</b></li>
+        <a href="https://arxiv.org/abs/2409.08083" target="_blank">[SimMAT]</a><a href="https://arxiv.org/abs/2403.17010" target="_blank">[Calib3D]</a><a href="https://arxiv.org/abs/2305.14207" target="_blank">[Segment Any RGBD]</a><a href="https://arxiv.org/abs/2306.09347" target="_blank">[Segment Any Point Cloud]</a><a href="https://arxiv.org/abs/2405.10305" target="_blank">[PSG-4D]</a><a href="https://arxiv.org/abs/2307.04091" target="_blank">[CMDFusion]</a>
+        <li><b>Open-set Recognition</b></li>
+        <a href="https://openreview.net/forum?id=xLr0I_xYGAs" target="_blank">[UOSR]</a><a href="https://arxiv.org/abs/2303.15467" target="_blank">[PSL]</a>
+        <li><b>Continual Learning</b></li>
+        <a href="https://arxiv.org/abs/2403.08568" target="_blank">[CPrompt]</a><a href="https://arxiv.org/abs/2211.00833" target="_blank">[FrameMaker]</a><a href="https://ieeexplore.ieee.org/abstract/document/9665922" target="_blank">[KD-TIL]</a>
+      </ul>
+    </div>
 
+    <div style="width: 50%; float:right">
+			<h3>
+				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+				<strong>Education</strong>
+			</h3>
+			<b>The Hong Kong University of Science and Technology</b><br>
+			<ul>
+        <li>Ph.D in Robotics, Sep. 2020 - Oct. 2024</li>
+        <li>Mentor: <a href="https://cqf.io/">Prof. Qifeng Chen</a> and <a href="https://scholar.google.com/citations?user=Oo7c22wAAAAJ&hl=zh-CN">Prof. Michael Yu Wang</a> </li>
+      </ul>
+      <b>The Hong Kong University of Science and Technology</b><br>
+        <ul>
+          <li>M.Sc in Mechanical Engineering, Sep. 2019 - Oct. 2020</li>
+          <li>Mentor: <a href="https://seng.hkust.edu.hk/about/people/faculty/lilong-cai">Prof. Lilong Cai</a></li>
+        </ul>
+      <b>Zhejiang University</b><br>
+      <ul>
+        <li>B.Eng in Mechatronics Engineering, Sep. 2015 - Oct. 2019</li>
+        <li>Mentor: <a href="http://me.zju.edu.cn/meenglish/2016/1129/c15493a734703/page.htm">Prof. Jinghua Xu</a></li>
+      </ul>
+    </div>
+  
+  </div>
+</div>
 
-<!--Work Experience-->
-<h2 id="wexperience" style="margin-bottom: 25px;">Work Experience</h2>
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/damo_1.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Algorithm Expert</b> | Damo Academy, Alibaba<br>
-                    Time: Aug 2024 - Present.
-                  </p>
-                </div>
-              </div>
-            </article>
-            <!--Internship Experience-->
-            <h2 id="iexperience" style="margin-bottom: 25px;">Internship Experience</h2>
+<!-- <div id="news" class="bio">
+  <h1 class="md-heading text-left">
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    News
+  </h1>  
+  <ul>
+    	<li class="indented" data-date="[Feb, 2024]"> Give a talk on <a href="https://arxiv.org/pdf/2402.03675.pdf">protein-protein interaction prediction</a> to <a href="https://jian-tang.com/students/">Jian Tang's group</a>. [<a href="files/ppiretrieval.pdf">Slide</a>]</li>
+	<li class="indented" data-date="[Dec, 2023]"> Give a talk on <a href="https://arxiv.org/pdf/2304.14621.pdf">structure-based molecule design</a> at LoG2023 Montreal. [<a href="files/mudiff.pdf">Slide</a>][<a href="https://www.youtube.com/watch?v=Z5l-gaV-DUo">Video</a>]</li>
+    	<li class="indented" data-date="[Nov, 2023]"> One paper accepted to 2nd Learning on Graphs Conference.</li>
+    	<li class="indented" data-date="[Oct, 2023]"> One paper accepted to 37th Conference on Neural Information Processing Systems.</li>
+    	<li class="indented" data-date="[Sep, 2023]"> One paper accepted to 12th International Conference on Complex Networks and their Applications.</li>
+   	<li class="indented" data-date="[Oct, 2022]"> One paper accepted to 36th Conference on Neural Information Processing Systems, GLFrontiers, and selected for <b><span style="color: red;">Oral</span></b> presentation.</li>
+   	<li class="indented" data-date="[Oct, 2022]"> Two papers accepted to 36th Conference on Neural Information Processing Systems, and one paper selected for <b><span style="color: red;">Spotlight</span></b> presentation.</li>
+  </ul>
+</div> -->
 
-        <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/MSRA_2.jpg" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Research Intern</b> | Natural Language Computing Group, Microsoft Research Asia<br>
-                    Time: Aug 2023 - May 2024. Mentor: <a href="https://chenfei-wu.github.io//">Dr. Chenfei Wu</a>, <a href="https://nanduan.github.io//">Dr. Nan Duan</a> 
-                  </p>
-                </div>
-              </div>
-            </article>
-
-        <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/SUSTech_2.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Visiting Student</b> | CVIP Group, Southern University of Science and Technology<br>
-                    Time: Aug 2023 - July 2024. Mentor: <a href="https://www.sustech.edu.cn/en/faculties/zhangjianguo.html">Prof. Jianguo Zhang</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-	<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/mmlab_ntu.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Visiting Student</b> | MMLab, Nanyang Technological University<br>
-                    Time: Mar 2023 - Sep 2023. Mentor: <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/damo_1.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Reseach Intern</b> | City Brain & Autonomous Driving Group, Damo Academy, Alibaba<br>
-                    Time: Mar 2022 - Mar 2023. Mentor: <a href="https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ&hl=en">Dr. Shiwei Zhang</a> 
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/hikvision_1.jpg" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Algorithm Intern</b> | Autonomous Driving Group, Hikvision Reseach Institute<br>
-                    Time: Mar 2020 - July 2020. Mentor:<a href="https://ieeexplore.ieee.org/author/37088529015"> Dr. Yushi Zhu</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/cuhk.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-
-                  <p>
-                    <b>Research Assistant</b> | Robotics and Artificial Intelligence Laboratory, The Chinese University of Hong Kong (Shenzhen)<br>
-                    Time: Nov 2019 - Feb 2020. Mentor: <a href="https://sites.google.com/site/lamtinlun">Prof. Tin Lun Lam</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <!--Publications-->
-            <h2 id="publications">
-              Publications
-              <span style="font-size: 1rem;margin-left: 1rem;position: relative;bottom: .2rem;">
-                <a href="https://scholar.google.com/citations?user=7SKAhBwAAAAJ&hl=en" target="_blank" style="font-size: 20px;">
-                  [Google Scholar]
-                </a>
-              </span>
-            </h2>
-
-            <!--List of publications-->
-
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/cvpr24-il.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                   <b>iControl3D: An Interactive System for Controllable 3D Scene
-Generation</b><br>
-                    Xingyi Li, Yizheng Wu, <b>Jun CEN</b>, Juewen Peng, Kewei Wang, Ke Xian, Zhe Wang, Zhiguo Cao, Guosheng Lin<br>
-                    <b><span style=color:#E02401>[ACMMM 2024]</span></b><i> ACM Multimedia, 2024</i><br>
-<a href="https://arxiv.org/pdf/2408.01678" target="_blank">[Paper]</a>
-<a href="https://github.com/xingyi-li/iControl3D" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-              </article>
-
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/VLP.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                   <b>Using Left and Right Brains Together: Towards Vision and Language Planning</b><br>
-                    <b>Jun Cen*</b>, Chenfei Wu*, Xiao Liu, Shengming Yin, Yixuan Pei, Jinglong Yang, Qifeng Chen, Nan Duan, Jianguo Zhang<br>
-                    <b><span style=color:#E02401>[ICML 2024]</span></b><i> International Conference on Machine Learning, 2024</i><br>
-<a href="https://arxiv.org/abs/2402.10534" target="_blank">[Paper]</a>
-<a href="https://github.com/Jun-CEN" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-              </article>
-
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/cvpr24-mp.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                   <b>Self-Supervised Class-Agnostic Motion Prediction with Spatial and Temporal Consistency Regularizations</b><br>
-                    Kewei Wang, Yizheng Wu, <b>Jun Cen</b>, Zhiyu Pan, Xingyi Li, Zhe Wang, Zhiguo Cao, Guosheng Lin<br>
-                    <b><span style=color:#E02401>[CVPR 2024]</span></b><i> Computer Vision and Pattern Recognition Conference, 2024</i><br>
-<a href="https://arxiv.org/abs/2403.13261" target="_blank">[Paper]</a>
-<a href="https://github.com/kwwcv/SelfMotion" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-              </article>
-
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/cvpr24-il.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                   <b>Consistent Prompting for Rehearsal-Free Continual Learning</b><br>
-                    Zhanxin Gao, <b>Jun Cen</b>, Xiaobin Chang<br>
-                    <b><span style=color:#E02401>[CVPR 2024]</span></b><i> Computer Vision and Pattern Recognition Conference, 2024</i><br>
-<a href="https://arxiv.org/abs/2403.08568" target="_blank">[Paper]</a>
-<a href="https://github.com/Zhanxin-Gao/CPrompt" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-              </article>
-
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/iros_2023.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                   <b>CMDFusion: Bidirectional Fusion Network with Cross-modality Knowledge Distillation for LIDAR Semantic Segmentation</b><br>
-                    <b>Jun Cen</b>, Shiwei Zhang, Yixuan Pei, Kun Li, Hang Zheng, Maochun Luo, Yingya Zhang, Qifeng Chen<br>
-                    <b><span style=color:#E02401>[RA-L 2023]</span></b><i> Robotics and Automation Letters, 2023</i><br>
-<a href="https://arxiv.org/abs/2307.04091" target="_blank">[Paper]</a>
-<a href="https://github.com/Jun-CEN/CMDFusion" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-              </article>
-
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/seg_pt.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                   <b>Segment Any Point Cloud Sequences by Distilling Vision Foundation Models</b><br>
-                    Youquan Liu*, Lingdong Kong*, <b>Jun Cen</b>, Runnan Chen, Wenwei Zhang, Liang Pan, Kai Chen, Ziwei Liu<br>
-                    <b><span style=color:#E02401>[NeurIPS 2023 Spotlight]</span></b><i> Conference on Neural Information Processing, 2023</i><br>
-<a href="https://arxiv.org/abs/2306.09347" target="_blank">[Paper]</a>
-<a href="https://github.com/youquanl/Segment-Any-Point-Cloud" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-              </article>
-             
-          <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/psg4d.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                   <b>4D Panoptic Scene Graph Generation</b><br>
-                    Jingkang Yang, <b>Jun Cen</b>, Wenxuan Peng, Shuai Liu, Fangzhou Hong, Xiangtai Li, Kaiyang Zhou, Qifeng Chen, Ziwei Liu<br>
-                    <b><span style=color:#E02401>[NeurIPS 2023 Spotlight]</span></b><i> Conference on Neural Information Processing, 2023</i><br>
-<a href="" target="_blank">[Paper]</a>
-<a href="" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-              </article>
-
-              <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/CLIPFSAR_arch.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                   <b>CLIP-guided Prototype Modulating for Few-shot Action Recognition</b><br>
-                    Xiang Wang, Shiwei Zhang, <b>Jun Cen</b>, Changxin Gao, Yingya Zhang, Deli Zhao, Nong Sang<br>
-                    <b><span style=color:#E02401>[IJCV 2023]</span></b><i> International Journal of Computer Vision, 2023</i><br>
-<a href="https://arxiv.org/abs/2303.02982" target="_blank">[Paper]</a>
-<a href="https://github.com/alibaba-mmai-research/CLIP-FSAR" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-              </article>
-
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/cvpr_2023.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Enlarge Instance-specific and Class-specific Information for Open-set Action Recognition</b><br>
-                    <b>Jun Cen</b>, Shiwei Zhang, Xiang Wang, Yixuan Pei, Zhiwu Qing, Yingya Zhang, Qifeng Chen<br>
-                    <b><span style=color:#E02401>[CVPR 2023]</span></b> <i> Computer Vision and Pattern Recognition Conference, 2023</i><br>
-<a href="https://arxiv.org/abs/2303.15467" target="_blank">[Paper]</a>
-<a href="https://github.com/Jun-CEN/PSL" target="_blank">[Code]</a>
-                </p>
-                </div>
-              </div>
-            </article>
-
-
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/iclr_2023.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>The Devil is in the Wrongly-classified Samples: Towards Unified Open-set Recognition</b><br>
-                    <b>Jun Cen*</b>, Di Luan*, Shiwei Zhang, Yixuan Pei, Yingya Zhang, Deli Zhao, Shaojie Shen, Qifeng Chen<br>
-                    <b><span style=color:#E02401>[ICLR 2023]</span></b><i> International Conference on Learning Representations, 2023</i><br>
-<a href="https://openreview.net/forum?id=xLr0I_xYGAs" target="_blank">[Paper]</a>
-<a href="https://github.com/Jun-CEN/Unified_Open_Set_Recognition" target="_blank">[Code]</a> 
-                </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-             <div class="column is-3">
-                <figure class="image">
-                  <img src="images/nips2022.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Learning a Condensed Frame for Memory-Efficient
-Video Class-Incremental Learning</b><br>
-                    Yixuan Pei*, Zhiwu Qing*, <b>Jun Cen</b>, Xiang Wang, Shiwei Zhang, Yaxiong Wang, Mingqian Tang, Nong Sang, Xueming Qian<br>
-                   <b><span style=color:#E02401>[NeurIPS 2022]</span></b><i> Conference on Neural Information Processing, 2022</i><br>
-<a href="https://arxiv.org/abs/2211.00833" target="_blank">[Paper]</a> 
-                 </p>
-                </div>
-              </div>
-            </article>
-            		  
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/eccv2022.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-<br>
-                    <b>Open-world Semantic Segmentation for LIDAR Point Clouds</b><br>
-                    <b>Jun Cen</b>, Peng Yun, Shiwei Zhang, Junhao Cai, Di Luan, Michael Yu Wang, Ming Liu, Mingqian Tang<br>
-                    <b><span style=color:#E02401>[ECCV 2022]</span></b><i> European Conference on Computer Vision, 2022</i><br>
-                    <a href="https://arxiv.org/abs/2207.01452" target="_blank">[Paper]</a>
-<a href="https://github.com/Jun-CEN/Open_world_3D_semantic_segmentation" target="_blank">[Code]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/ral2022.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Real-Time Collision-Free Grasp Pose Detection With Geometry-Aware Refinement Using High-Resolution Volume</b><br>
-                    Junhao Cai, <b>Jun Cen</b>, Haokun Wang, Michael Yu Wang<br>
-                    <b><span style=color:#E02401>[RA-L with ICRA 2022]</span></b><i> Robotics and Automation Letters, 2022</i><br>
-                    <a href="https://ieeexplore.ieee.org/abstract/document/9681231" target="_blank">[Paper]</a>
-                    <a href=" https://sites.google.com/view/vpn-icra2022" target="_blank">[Project Page and Code]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/3dv_2021.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Open-set 3D Object Detection</b><br>
-                    <b>Jun Cen</b>, Peng Yun, Junhao Cai, Michael Yu Wang, Ming Liu<br>
-                    <b><span style=color:#E02401>[3DV 2021]</span></b><i> International Conference on 3D Vision, 2021</i><br>
-                    <a href="https://arxiv.org/abs/2112.01135" target="_blank">[Paper]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/3dv_il.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Conflicts between Likelihood and Knowledge Distillation in Task Incremental Learning for 3D Object Detection</b><br>
-                 Peng Yun, <b>Jun Cen</b>, Ming Liu<br>
-<b><span style=color:#E02401>[3DV 2021]</span></b><i> International Conference on 3D Vision, 2021</i><br> 
-                   <a href="https://ieeexplore.ieee.org/abstract/document/9665922" target="_blank">[Paper]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/head_3.jpg">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>Deep Metric Learning for Open World Semantic Segmentation</b><br>
-<b>Jun Cen</b>, Peng Yun, Junhao Cai, Michael Yu Wang, Ming Liu<br>                    
-<b><span style=color:#E02401>[ICCV 2021]</span></b><i> International Conference on Computer Vision, 2021</i><br>
-                    <a href="https://arxiv.org/abs/2108.04562" target="_blank">[Paper]</a>
-                    <a href="https://github.com/Jun-CEN/Open-World-Semantic-Segmentation" target="_blank">[Code]</a>
-                    <a href="https://youtu.be/t1vl7MzGb2Q" target="_blank">[Video]</a><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/iros2021.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>BORM: Bayesian Object Relation Model for Indoor Scene Recognition</b><br>
-Liguang Zhou, <b>Jun Cen</b>, Xingchao Wang, Zhenglong Sun, Tin Lun Lam, Yangsheng Xu</br>
-                    <b><span style=color:#E02401>[IROS 2021]</span></b><i> International Conference on Intelligent Robots and Systems, 2021</i><br>
-                    <a href="https://arxiv.org/abs/2108.00397" target="_blank">[Paper]</a>
-                    <a href="https://github.com/Jun-CEN/BORM" target="_blank">[Code]</a> 
-                    <a href="https://www.youtube.com/watch?v=8lHP-sdNRJ8" target="_blank">[Video]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/printer.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-<br>
-<br>
-                    <b>Precision forward design for 3D printing using kinematic sensitivity via Jacobian matrix considering uncertainty</b><br>
-                    Jinghua Xu, Xueqing Feng, <b>Jun Cen</b>, Shuyou Zhang<br>
-                    <i>The International Journal of Advanced Manufacturing Technology, 2022</i><br>
-                    <a href="https://link.springer.com/article/10.1007/s00170-020-05940-4" target="_blank">[Paper]</a>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-<!--projects-->
-            <h2 id="projects" style="margin-bottom: 25px;">Projects</h2>
-<article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="images/logo_sad.png" class="img-logo">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <b>SAD: Segment Any RGBD</b><br>
-                   <b>Jun Cen</b>, Yizheng Wu, Xingyi Li, Jingkang Yang, Yixuan Pei, Lingdong Kong<br>
-               Got more than <b><span style=color:#E02401>700 stars</span></b> on Github.<br>
-<b><span style=color:#E02401>NeurIPS 2023 workshop</span></b><i> on Robustness of Few-shot and Zero-shot Learning in Foundation Models, 2023</i><br>               
-<a href="https://github.com/Jun-CEN/SegmentAnyRGBD" target="_blank">[Code]</a>
-<a href="https://arxiv.org/abs/2305.14207" target="_blank">[Technical Report]</a>
-               <a href="https://huggingface.co/spaces/mmlab-ntu/Segment-Any-RGBD/blob/main/app.py" target="_blank">[Huggingface]</a>
-              <a href="https://twitter.com/liuziwei7/status/1651461200956514306?s=46&t=MqA7wuLxDqLOBW0TfTNOMA" target="_blank">[Twitter]</a><br>
-                  </p>
-                </div>
-              </div>
-            </article>
-
-            <h2 id="services">Services</h2>
-            <ul>
-              <li>Conference and Journal Reviewer:
-                <br>&emsp;IEEE Transactions on Pattern Analysis and Machine Intelligence <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">(TPAMI)</a>
-<br>&emsp;IEEE Transactions on Neural Networks and Learning Systems <a href="https://cis.ieee.org/publications/t-neural-networks-and-learning-systems">(TNNLS)</a> 
-<br>&emsp;International Conference on Machine Learning <a href="https://icml.cc/">(ICML)</a>
-<br>&emsp;International Conference on Learning Representations <a href="https://iclr.cc/">(ICLR)</a>
-<br>&emsp;Conference on Neural Information Processing Systems <a href="https://nips.cc/">(NeurIPS)</a>
-<br>&emsp;IEEE/CVF Computer Vision and Pattern Recognition Conference <a href="https://cvpr2023.thecvf.com/">(CVPR)</a>               
-<br>&emsp;IEEE/CVF International Conference on Computer Vision <a href="https://iccv2023.thecvf.com/">(ICCV)</a>
-<br>&emsp;IEEE/RAS International Conference on Intelligent Robots and Systems <a href="https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros">(IROS)</a>
-                <br>&emsp;IEEE/RAS International Conference on Robotics and Automation <a href="https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra">(ICRA)</a>
-                <br>&emsp;IEEE/CAA Journal of Automatica Sinica <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6570654">(JAS)</a> (中国自动化学报)
-            </ul>
-
-<h2 id="awards">Awards</h2>
-            <ul>
-              <li><a href="images/RI.jpeg">Outstanding Research Intern, Alibaba Group, 2023.</a> (15 candidates per year)
-             <li>Overseas Research Award, HKUST, 2023.
-             <li>Postgraduate Studentship, 2020-2024, HKUST.
-             <li>School of Engineering Excellent Student Scholarship, 2019-2020, HKUST. (Top 5%)
-             <li>School of Engineering Entrance Scholarship, 2019-2020, HKUST. (Top 2%)
-           </ul>
+<div class="wrapper">
+  <div id="timeline" class="timeline-brief">
+    <h1 class="md-heading text-left">
+      <i class="fa fa-tasks" aria-hidden="true"></i>
+      Experiences
+    </h1>
+  
+    <div class="timeline-body">
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/damo_logo_2.avif"/>
+          Aug, 2024 - Now
+        </div>
+        <div class="timeline-title">
+          Algorithm Expert @ <a href="https://damo.alibaba.com/?language=zh">DAMO Academy, Alibaba</a>
+        </div>
+        <div class="timeline-desc">
+          Embodied AI, Multi-modality LLM<br>
+          <div class="timeline-host">
+            <!-- Supervisor: <a href="https://prokia.github.io/">Shuangjia Zheng</a> -->
           </div>
         </div>
+      </div>
+  
+      
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/MSRA_3.jpg"/>
+          Aug, 2023 - May, 2024
+        </div>
+        <div class="timeline-title">
+          Research Intern @ <a href="https://www.msra.cn/">MSRA</a>
+        </div>
+        <div class="timeline-desc">
+          <div class="timeline-host">
+            Supervisor: <a href="https://chenfei-wu.github.io//">Dr. Chenfei Wu</a>, <a href="https://nanduan.github.io//">Dr. Nan Duan</a>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/SUSTech_3.png"/>
+          Aug, 2023 - July, 2024
+        </div>
+        <div class="timeline-title">
+          Visiting Student @ <a href="https://www.sustech.edu.cn/en/">SUSTech</a>
+        </div>
+        <div class="timeline-desc">
+          <div class="timeline-host">
+            Supervisor: <a href="https://www.sustech.edu.cn/en/faculties/zhangjianguo.html">Prof. Jianguo Zhang</a>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="timeline-item">
+        <div class="timeline-date">
+          <img class="social-icon" src="images/ntu_logo_2.png"/>
+          Mar, 2023 - Sep, 2023
+        </div>
+        <div class="timeline-title">
+          Visiting Student @ <a href="https://www.mmlab-ntu.com/">MMLab, NTU</a>
+        </div>
+        <div class="timeline-desc">
+        <div class="timeline-host">
+          Supervisor: <a href="https://liuziwei7.github.io/">Prof. Ziwei Liu</a>
+        </div>
+      </div>
+      </div>
+  
+        <div class="timeline-item">
+          <div class="timeline-date">
+            <img class="social-icon" src="images/damo_logo_2.avif"/>
+            Mar, 2022 - Mar, 2023
+          </div>
+          <div class="timeline-title">
+            Research Intern @ <a href="https://damo.alibaba.com/?language=zh">DAMO Academy, Alibaba</a>
+          </div>
+          <div class="timeline-desc">
+            <div class="timeline-host">
+              Supervisor: <a href="https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ&hl=en">Dr. Shiwei Zhang</a> 
+            </div>
+          </div>
+        </div>
+  
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/hikvision.jpg"/>
+              Mar, 2020 - July, 2020
+            </div>
+            <div class="timeline-title">
+              Algorithm Intern @ <a href="https://www.hikvision.com/en/">HIKVISION</a>
+            </div>
+            <div class="timeline-desc">
+              <div class="timeline-host">
+                Supervisor: <a href="https://ieeexplore.ieee.org/author/37088529015"> Dr. Yushi Zhu</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-date">
+              <img class="social-icon" src="images/cuhk_logo.png"/>
+              Nov, 2019 - Feb, 2020
+            </div>
+            <div class="timeline-title">
+              Research Assistant @ <a href="https://www.cuhk.edu.cn/en">CUHK(SZ)</a>
+            </div>
+            <div class="timeline-desc">
+              <div class="timeline-host">
+                Supervisor: <a href="https://sites.google.com/view/zhouliguang">Dr. Liguang Zhou</a>, <a href="https://sites.google.com/site/lamtinlun">Prof. Tin Lun Lam</a>
+              </div>
+            </div>
+          </div>
+  
+    <br>
+  </div>
+  </div>
+  </div>
+
+
+<div id="publications" class="publications">
+  <h1 class="md-heading text-left">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    Publications
+  </h1>
+
+  <div class="pub-list">
+
+    <!-- <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="publications/mudiff.png">
+      </div>
+      <div class="pub-right">
+        <div class="title">
+          MUDiff: Unified Diffusion for Complete Molecule Generation
+        </div>
+        <div class="desc">
+        </div>
+	      </div>
+        <div class="authors">
+          <font style="font-size: 11pt;">
+		  <b>Hua, C.</b>, Luan, S., Xu, M., Ying, R., Fu, J., Ermon, S., Precup, D.
+          </font>
+          <!-- </span> -->
+        <!-- </div>
+        <div class="publish">
+          <span class="publisher">Learning On Graphs Conference, 2023</span>
+          <span class="place"></span>
+        </div>
+        <div class="tags">
+          [<a class="tag" href="https://arxiv.org/pdf/2304.14621.pdf"> <strong>Paper</strong></a>]
+        </div> -->
+
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/mm24.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              iControl3D: An Interactive System for Controllable 3D Scene Generation
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Xingyi Li, Yizheng Wu, <b>Jun Cen</b>, Juewen Peng, Kewei Wang, Ke Xian, Zhe Wang, Zhiguo Cao, Guosheng Lin
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">ACMMM 2024</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/pdf/2408.01678">Paper</a>]
+              [<a class="tag" href="https://github.com/xingyi-li/iControl3D">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/VLP.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Using Left and Right Brains Together: Towards Vision and Language Planning
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <b>Jun Cen*</b>, Chenfei Wu*, Xiao Liu, Shengming Yin, Yixuan Pei, Jinglong Yang, Qifeng Chen, Nan Duan, Jianguo Zhang
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">ICML 2024</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2402.10534">Paper</a>]
+              [<a class="tag" href="https://github.com/Jun-CEN">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/cvpr24-mp.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Self-Supervised Class-Agnostic Motion Prediction with Spatial and Temporal Consistency Regularizations
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Kewei Wang, Yizheng Wu, <b>Jun Cen</b>, Zhiyu Pan, Xingyi Li, Zhe Wang, Zhiguo Cao, Guosheng Lin
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">CVPR 2024</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2403.13261">Paper</a>]
+              [<a class="tag" href="https://github.com/kwwcv/SelfMotion">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/cvpr24-il.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Consistent Prompting for Rehearsal-Free Continual Learning
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Zhanxin Gao, <b>Jun Cen</b>, Xiaobin Chang
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">CVPR 2024</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2403.08568">Paper</a>]
+              [<a class="tag" href="https://github.com/Zhanxin-Gao/CPrompt">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/iros_2023.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              CMDFusion: Bidirectional Fusion Network with Cross-modality Knowledge Distillation for LIDAR Semantic Segmentation
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <b>Jun Cen</b>, Shiwei Zhang, Yixuan Pei, Kun Li, Hang Zheng, Maochun Luo, Yingya Zhang, Qifeng Chen
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">RA-L 2023</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2307.04091">Paper</a>]
+              [<a class="tag" href="https://github.com/Jun-CEN/CMDFusion">Code</a>]
+            </div>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/logo_sad.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              SAD: Segment Any RGBD
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <b>Jun Cen</b>, Yizheng Wu, Kewei Wang, Xingyi Li, Jingkang Yang, Yixuan Pei, Lingdong Kong, Ziwei Liu, Qifeng Chen
+                <br>
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">NeurIPS 2023 workshop</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2305.14207">Paper</a>]
+              [<a class="tag" href="https://github.com/Jun-CEN/SegmentAnyRGBD">Code (Star 700+)</a>]
+              [<a class="tag" href="https://twitter.com/liuziwei7/status/1651461200956514306?s=46&t=MqA7wuLxDqLOBW0TfTNOMA">Twitter</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/seg_pt.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Segment Any Point Cloud Sequences by Distilling Vision Foundation Models
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Youquan Liu*, Lingdong Kong*, <b>Jun Cen</b>, Runnan Chen, Wenwei Zhang, Liang Pan, Kai Chen, Ziwei Liu
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">NeurIPS 2023 Spotlight</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2306.09347">Paper</a>]
+              [<a class="tag" href="https://github.com/youquanl/Segment-Any-Point-Cloud">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/psg4d.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              4D Panoptic Scene Graph Generation
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Jingkang Yang, <b>Jun Cen</b>, Wenxuan Peng, Shuai Liu, Fangzhou Hong, Xiangtai Li, Kaiyang Zhou, Qifeng Chen, Ziwei Liu
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">NeurIPS 2023 Spotlight</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="">Paper</a>]
+              [<a class="tag" href="">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/CLIPFSAR_arch.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              CLIP-guided Prototype Modulating for Few-shot Action Recognition
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Xiang Wang, Shiwei Zhang, <b>Jun Cen</b>, Changxin Gao, Yingya Zhang, Deli Zhao, Nong Sang
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">IJCV 2023</span>
+              <span class="place"></span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2303.02982">Paper</a>]
+              [<a class="tag" href="https://github.com/alibaba-mmai-research/CLIP-FSAR">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/cvpr_2023.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Enlarge Instance-specific and Class-specific Information for Open-set Action Recognition
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <b>Jun Cen</b>, Shiwei Zhang, Xiang Wang, Yixuan Pei, Zhiwu Qing, Yingya Zhang, Qifeng Chen
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">CVPR 2023</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2303.15467">Paper</a>]
+              [<a class="tag" href="https://github.com/Jun-CEN/PSL">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/iclr_2023.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              The Devil is in the Wrongly-classified Samples: Towards Unified Open-set Recognition
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <b>Jun Cen*</b>, Di Luan*, Shiwei Zhang, Yixuan Pei, Yingya Zhang, Deli Zhao, Shaojie Shen, Qifeng Chen
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">ICLR 2023</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://openreview.net/forum?id=xLr0I_xYGAs">Paper</a>]
+              [<a class="tag" href="https://github.com/Jun-CEN/Unified_Open_Set_Recognition">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/nips2022.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Learning a Condensed Frame for Memory-Efficient Video Class-Incremental Learning
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Yixuan Pei*, Zhiwu Qing*, <b>Jun Cen</b>, Xiang Wang, Shiwei Zhang, Yaxiong Wang, Mingqian Tang, Nong Sang, Xueming Qian
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">NeurIPS 2022</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2211.00833">Paper</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/eccv2022_2.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Open-world Semantic Segmentation for LIDAR Point Clouds
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <b>Jun Cen</b>, Peng Yun, Shiwei Zhang, Junhao Cai, Di Luan, Michael Yu Wang, Ming Liu, Mingqian Tang
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">ECCV 2022</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2207.01452">Paper</a>]
+              [<a class="tag" href="https://github.com/Jun-CEN/Open_world_3D_semantic_segmentation">Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/ral2022.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Real-Time Collision-Free Grasp Pose Detection With Geometry-Aware Refinement Using High-Resolution Volume
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Junhao Cai, <b>Jun Cen</b>, Haokun Wang, Michael Yu Wang
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">RA-L with ICRA 2022</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://ieeexplore.ieee.org/abstract/document/9681231">Paper</a>]
+              [<a class="tag" href="https://sites.google.com/view/vpn-icra2022">Project Page and Code</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/3dv_2021.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Open-set 3D Object Detection
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <b>Jun Cen</b>, Peng Yun, Junhao Cai, Michael Yu Wang, Ming Liu
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">3DV 2021</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2112.01135">Paper</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/3dv_il.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Conflicts between Likelihood and Knowledge Distillation in Task Incremental Learning for 3D Object Detection
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Peng Yun, <b>Jun Cen</b>, Ming Liu
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">3DV 2021</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://ieeexplore.ieee.org/abstract/document/9665922">Paper</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/head_3.jpg">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Deep Metric Learning for Open World Semantic Segmentation
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                <b>Jun Cen</b>, Peng Yun, Junhao Cai, Michael Yu Wang, Ming Liu
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">ICCV 2021</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2108.04562">Paper</a>]
+              [<a class="tag" href="https://github.com/Jun-CEN/Open-World-Semantic-Segmentation">Code</a>]
+              [<a class="tag" href="https://youtu.be/t1vl7MzGb2Q">Video</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/iros2021.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              BORM: Bayesian Object Relation Model for Indoor Scene Recognition
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Liguang Zhou, <b>Jun Cen</b>, Xingchao Wang, Zhenglong Sun, Tin Lun Lam, Yangsheng Xu
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">IROS 2021</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://arxiv.org/abs/2108.00397">Paper</a>]
+              [<a class="tag" href="https://github.com/Jun-CEN/BORM">Code</a>]
+              [<a class="tag" href="https://www.youtube.com/watch?v=8lHP-sdNRJ8">Video</a>]
+            </div>
+          </div>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-left">
+            <img class="intro-img frame" src="images/printer.png">
+          </div>
+          <div class="pub-right">
+            <div class="title">
+              Precision forward design for 3D printing using kinematic sensitivity via Jacobian matrix considering uncertainty
+            </div>
+            <div class="authors">
+              <font style="font-size: 11pt;">
+                Jinghua Xu, Xueqing Feng, <b>Jun Cen</b>, Shuyou Zhang
+              </font>
+            </div>
+            <div class="publish">
+              <span class="place">IJAMT 2020</span>
+            </div>
+            <div class="tags">
+              [<a class="tag" href="https://link.springer.com/article/10.1007/s00170-020-05940-4">Paper</a>]
+            </div>
+          </div>
+        </div>
+        
+        
+    
+
+	    
+	      
       </div>
     </div>
 
-   <!-- ########## Tools: Visitor Locations Visualization ########## -->
+    
+
+  </div>
+</div>
+</div>
+	
+
+
+<div class="wrapper">
+  <div id="awards" class="bio">
+    <h1 class="md-heading text-left">
+      <i class="fa fa-tasks" aria-hidden="true"></i>
+      Selected Honors & Awards
+    </h1>
+    <ul>
+  	<li> <a href="images/RI.jpeg">Outstanding Research Intern, Alibaba Group, 2023.</a> (15 candidates per year)</li>
+	<li> Overseas Research Award, HKUST, 2023.</li>
+	<li> Postgraduate Studentship, HKUST, 2020-2024.</li>
+	<li> School of Engineering Excellent Student Scholarship, HKUST, 2019-2020.</li>
+	<li> School of Engineering Entrance Scholarship, HKUST, 2019-2020.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div id="academicservices" class="bio">
+    <div class="bio-body" style="overflow:hidden;">
+      <h1 class="md-heading text-left">
+        <i class="fa fa-tasks" aria-hidden="true"></i>
+        Academic Services
+      </h1>  
+      	<b>Reviewer:</b> T-PAMI, IJCV, ICML, ICLR, NeurIPS, CVPR, ICCV, ICRA, IROS, RA-L<br>
+      	<!-- <b>Area Chair:</b> NeurIPS2023 GLFrontier<br>
+	<b>Organizer:</b> LoG2023 Montreal<br> -->
+    </div>
+  </div>
+</div>
+
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5mz7hnrbg3y&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 
-    <!-- Footer -->
-    <footer class="container">
-      <br><hr>
-      <div class="row" style="text-align: center">
-        © 2023 Jun CEN
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Personal Email:</li>
+          <li><a href="mailto:">jcenaa [at] connect.ust.hk</a></li>
+        </ul>
       </div>
-    </footer>
-  </section>
+
+      <div class="footer-col  footer-col-2">
+          <a href="https://scholar.google.com/citations?user=7SKAhBwAAAAJ&hl=en" class="icon-button github">
+          <i class="ai ai-google-scholar-square icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://github.com/Jun-CEN" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jun-cen-45b995219/" class="icon-button linkedin">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+         
+          <a href="work/Resume_Jun_CEN.pdf" class="icon-button github">
+            <i class="ai ai-cv icon-github"></i>
+            <span></span>
+          </a>
+      </div>
+	<div class="footer-col footer-col-3">
+    	<!--<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwillhua127.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
+	<!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?user=Lxe71v4AAAAJ&hl=en&url=https%3A%2F%2Fscholar.google.com%2Fcitations&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
+		<p class="text">Last updated: Sep, 2024.<br>The style of this website is borrowed from <a href='http://hexianghu.com/'>Hexiang Hu's</a>.</p>
+	</div>
+  </div>
+  </div>
+
+</footer>
+    <div class="back-to-top">Top</div>
 
 
-  <script>
-
-    var $hashList = $('.menu-list a'), offsetList, maxScrollHeight;
-
-    $('#sidebar').on('click', 'a', function(){
-      activate($(this))
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+    
+        }
     });
-    
-    $(window).on('resize', debounce(calculateBoundary, 300));
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+  </body>
 
-    $(document).on('scroll', debounce(judgeScroll, 300));
+<!--
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    calculateBoundary();
-    judgeScroll();
-    
-    function  calculateBoundary() {
-      offsetList = $hashList.map(function(idx, ele){
-        return $(ele.hash).offset().top
-      });
-      maxScrollHeight = $(document).height() - $(window).height()
-    }
-    
-    function judgeScroll() {
-      var tps = $("html").scrollTop()
-              ? $("html").scrollTop()
-              : $("body").scrollTop(),
-              len = offsetList.length;
-      if(tps >= maxScrollHeight-10){
-        activate($hashList.eq(len-1));
-        return
-      }
-      for(var i=0; i<len; i++){
-       if(tps+50<offsetList[i]){
-          activate($hashList.eq(Math.max(0,i-1)));
-          return
-        }
-      }
-    }
+  ga('create', 'UA-60071442-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
 
-    function activate(ele){
-      $hashList.removeClass('is-active');
-      ele.addClass('is-active');
-    }
-
-    function debounce(fn, delay) {
-      var timeout = null;
-      return function () {
-        var args = arguments;
-        var context = this;
-        if (!timeout) {
-          timeout = setTimeout(function () {
-            timeout = 0;
-            return fn.apply(context, args);
-          }, delay);
-        }
-      };
-    }
-
-
-
-  </script>
-
-
-</body>
-
+<!--<script src="custom-pub.js"></script>-->
 </html>
-
