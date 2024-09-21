@@ -44,14 +44,9 @@ body {
     -webkit-text-size-adjust: 100%
 }
 
-/* body:after {
-    display: none;
-    content: url("images/background/background1.JPG") url("images/background/background2.jpg")
-} */
-
 body:after {
     display: none;
-    content: url("images/background/background_hkust.jpg") url("images/background/background2.jpg")
+    content: url("images/background/background1.JPG") url("images/background/background2.jpg")
 }
 
 h1,
@@ -215,10 +210,18 @@ pre>code {
 }
 
 .site-nav {
+    display: flex;
+    justify-content: center; /* This centers the links horizontally */
+    align-items: center;      /* Aligns them vertically */
+    line-height: 56px;
+    z-index: 3;
+}
+
+/* .site-nav {
     float: right;
     line-height: 56px;
     z-index: 3
-}
+} */
 
 .site-nav .menu-icon {
     display: none
@@ -1025,6 +1028,7 @@ hr.soft {
     color: #0077B5
 }
 
+
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
 .icon-button:hover .icon-github,
@@ -1609,11 +1613,21 @@ div.paginate-container li:nth-last-child(2) a:after {
     margin-right: auto
 }
 
-.pub-left>.intro-img {
+/* .pub-left>.intro-img {
     width: 280px;
     border-style: solid;
     border-color: #9b3022
+} */
+
+.pub-left > .intro-img {
+    width: 280px; /* Set your desired width */
+    height: 130px; /* Set your desired height */
+    border-style: solid;
+    border-color: #9b3022;
+    object-fit: contain; /* Ensures the image fills the container while maintaining aspect ratio */
+    object-position: center; /* Centers the image inside the container */
 }
+
 
 .pub-right {
     float: right;
