@@ -411,37 +411,14 @@ I'm always looking for related colaboration. If you are interested to chat with 
 <div id="publications" class="publications">
   <h1 class="md-heading text-left">
     <i class="fa fa-file" aria-hidden="true"></i>
-    Publications
+    Publications (<button class="custom-button" id="show-selected-btn"> Show Representative </button> / <button class="custom-button" id="show-all-btn"> Show All </button>)
   </h1>
+
+
 
   <div class="pub-list">
 
-    <!-- <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="publications/mudiff.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          MUDiff: Unified Diffusion for Complete Molecule Generation
-        </div>
-        <div class="desc">
-        </div>
-	      </div>
-        <div class="authors">
-          <font style="font-size: 11pt;">
-		  <b>Hua, C.</b>, Luan, S., Xu, M., Ying, R., Fu, J., Ermon, S., Precup, D.
-          </font>
-          <!-- </span> -->
-        <!-- </div>
-        <div class="publish">
-          <span class="publisher">Learning On Graphs Conference, 2023</span>
-          <span class="place"></span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://arxiv.org/pdf/2304.14621.pdf"> <strong>Paper</strong></a>]
-        </div> -->
-
-        <div class="pub">
+        <div class="pub" data-selected="false">
           <div class="pub-left">
             <img class="intro-img frame" src="images/mm24.png">
           </div>
@@ -465,7 +442,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
           </div>
         </div>
         
-        <div class="pub">
+        <div class="pub" data-selected="true">
           <div class="pub-left">
             <img class="intro-img frame" src="images/VLP.png">
           </div>
@@ -537,7 +514,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
           </div>
         </div>
         
-        <div class="pub">
+        <div class="pub" data-selected="true">
           <div class="pub-left">
             <img class="intro-img frame" src="images/iros_2023.png">
           </div>
@@ -561,7 +538,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
           </div>
         </div>
 
-        <div class="pub">
+        <div class="pub" data-selected="true">
           <div class="pub-left">
             <img class="intro-img frame" src="images/logo_sad.png">
           </div>
@@ -659,7 +636,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
           </div>
         </div>
         
-        <div class="pub">
+        <div class="pub" data-selected="true">
           <div class="pub-left">
             <img class="intro-img frame" src="images/cvpr_2023.png">
           </div>
@@ -682,7 +659,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
           </div>
         </div>
         
-        <div class="pub">
+        <div class="pub" data-selected="true">
           <div class="pub-left">
             <img class="intro-img frame" src="images/iclr_2023.png">
           </div>
@@ -727,7 +704,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
           </div>
         </div>
         
-        <div class="pub">
+        <div class="pub" data-selected="true">
           <div class="pub-left">
             <img class="intro-img frame" src="images/eccv2022_2.png">
           </div>
@@ -773,7 +750,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
           </div>
         </div>
         
-        <div class="pub">
+        <div class="pub" data-selected="true">
           <div class="pub-left">
             <img class="intro-img frame" src="images/3dv_2021.png">
           </div>
@@ -817,7 +794,7 @@ I'm always looking for related colaboration. If you are interested to chat with 
           </div>
         </div>
         
-        <div class="pub">
+        <div class="pub" data-selected="true">
           <div class="pub-left">
             <img class="intro-img frame" src="images/head_3.jpg">
           </div>
@@ -901,7 +878,31 @@ I'm always looking for related colaboration. If you are interested to chat with 
 </div>
 </div>
 	
+<!-- JavaScript to handle button clicks -->
+<script>
+  // Get the buttons and publications
+  const showSelectedBtn = document.getElementById('show-selected-btn');
+  const showAllBtn = document.getElementById('show-all-btn');
+  const publications = document.querySelectorAll('.pub');
 
+  // Add event listener to 'Show Selected Publication' button
+  showSelectedBtn.addEventListener('click', function() {
+    publications.forEach(pub => {
+      if (pub.getAttribute('data-selected') === 'true') {
+        pub.style.display = 'block';  // Show selected publication
+      } else {
+        pub.style.display = 'none';  // Hide other publications
+      }
+    });
+  });
+
+  // Add event listener to 'Show All' button
+  showAllBtn.addEventListener('click', function() {
+    publications.forEach(pub => {
+      pub.style.display = 'block';  // Show all publications
+    });
+  });
+</script>
 
 <div class="wrapper">
   <div id="awards" class="bio">

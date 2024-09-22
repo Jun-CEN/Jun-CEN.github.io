@@ -375,6 +375,23 @@ pre>code {
     font-weight: 600
 }
 
+.custom-button {
+    font-size: 20px; /* Larger font size */
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #0077B5; /* Text color */
+    padding: 5px 5px; /* Add padding */
+    outline: none; /* Remove focus outline */
+}
+
+.custom-button:hover {
+    color: #0056b3; /* Darker color on hover */
+    text-decoration: none; /* Remove underline on hover */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+
 .button {
     padding: 10px;
     margin-top: 25px
